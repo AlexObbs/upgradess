@@ -93,7 +93,7 @@ app.post('/create-checkout-session', async (req, res) => {
         }
 
         // Create success and cancel URLs
-        const successUrl = `https://kenyaonabudgetsafaris.co.uk/payment-success.html?session_id={CHECKOUT_SESSION_ID}&userId=${userId}&timestamp=${timestamp}&type=${type || 'package'}`;
+        const successUrl = `https://kenyaonabudgetsafaris.co.uk/payment-successa.html?session_id={CHECKOUT_SESSION_ID}&userId=${userId}&timestamp=${timestamp}&type=${type || 'package'}`;
         const cancelUrl = `https://kenyaonabudgetsafaris.co.uk/payment-cancelled.html?userId=${userId}&timestamp=${timestamp}`;
 
         // For local testing, use different URLs
